@@ -31,8 +31,8 @@ while True:
         cv2.imshow("mask Image", mask)
 
         #maskenin etrafinda kalan gurultuleri sil
-        mask = cv2.erode(mask, None, iterations=1)
-        mask = cv2.dilate(mask, None, iterations=1)
+        mask = cv2.erode(mask, None, iterations=4)
+        mask = cv2.dilate(mask, None, iterations=4)
         cv2.imshow("mask+erode-dilate", mask)
 
         #contour
