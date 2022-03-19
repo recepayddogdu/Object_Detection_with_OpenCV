@@ -24,4 +24,5 @@ for j in img_path_list:
         cv2.putText(image, "Kedi {}".format(i+1), (x,y-10),cv2.FONT_HERSHEY_SIMPLEX, 0.55, (0,255,255),2)
         
     cv2.imshow(j, image)
-    if cv2.waitKey(0) & 0xFF == ord("q"): continue
+    if cv2.waitKey(0) & 0xFF == ord("q"): 
+        continue
