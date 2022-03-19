@@ -6,7 +6,7 @@ frameWidth = 280
 frameHeight = 360
 color = (255,0,255)
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 cap.set(3, frameWidth)
 cap.set(4, frameHeight)
 
