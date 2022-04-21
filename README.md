@@ -1,5 +1,9 @@
 # Object Detection with OpenCV
 
+[Buraya tıklayarak Notion sayfamdan notları daha düzenli inceleyebilirsiniz.](https://recepaydogdu.notion.site/Object-Detection-with-OpenCV-102a12f84a0b4122a0bc3d1da30bc48c)
+
+[Kullanılan kaynaklar için tıklayınız.](kaynaklar.md)
+
 ## Nesne Tespiti Nedir?
 
 ![Untitled](md_images/Untitled.png)

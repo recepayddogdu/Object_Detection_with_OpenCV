@@ -24,11 +24,12 @@ imgWidth = 180 #Genislik
 imgHeight = 120 #Yukseklik
 
 #Video capture
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 cap.set(3, 640) #Width
 cap.set(4, 480) #Height
 cap.set(10, 180) #Brightness
+print("fps : " + str(cap.get(5)))
 
 global countFolder
 def saveDataFunc():
@@ -37,7 +38,7 @@ def saveDataFunc():
 
     while os.path.exists(path + str(countFolder)):
         countFolder += 1
-    os.makedirs(path + str(countFolder))
+    # os.makedirs(path + str(countFolder))
     
 saveDataFunc()
 
@@ -48,6 +49,8 @@ while True:
     success, img = cap.read()
     
     if success:
+        cv2.imshow("Image", img)
+        
         img = cv2.resize(img, (imgWidth, imgHeight))
         
         #Her frame'i almaya gerek olmadigi icin 5'in katlarina denk gelen frame'ler alinacak.
@@ -58,7 +61,7 @@ while True:
         
         count += 1
     
-        cv2.imshow("Image", img)
+        # cv2.imshow("Image", img)
     
     if cv2.waitKey(1) & 0xFF == ord("q"): break
 
